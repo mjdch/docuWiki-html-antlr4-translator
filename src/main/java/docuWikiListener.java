@@ -17,6 +17,16 @@ public interface docuWikiListener extends ParseTreeListener {
 	 */
 	void exitParagraph(docuWikiParser.ParagraphContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link docuWikiParser#url}.
+	 * @param ctx the parse tree
+	 */
+	void enterUrl(docuWikiParser.UrlContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link docuWikiParser#url}.
+	 * @param ctx the parse tree
+	 */
+	void exitUrl(docuWikiParser.UrlContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link docuWikiParser#headline}.
 	 * @param ctx the parse tree
 	 */
@@ -97,15 +107,15 @@ public interface docuWikiListener extends ParseTreeListener {
 	 */
 	void exitExternalLink(docuWikiParser.ExternalLinkContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link docuWikiParser#image}.
+	 * Enter a parse tree produced by {@link docuWikiParser#media}.
 	 * @param ctx the parse tree
 	 */
-	void enterImage(docuWikiParser.ImageContext ctx);
+	void enterMedia(docuWikiParser.MediaContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link docuWikiParser#image}.
+	 * Exit a parse tree produced by {@link docuWikiParser#media}.
 	 * @param ctx the parse tree
 	 */
-	void exitImage(docuWikiParser.ImageContext ctx);
+	void exitMedia(docuWikiParser.MediaContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link docuWikiParser#quote}.
 	 * @param ctx the parse tree
@@ -137,15 +147,15 @@ public interface docuWikiListener extends ParseTreeListener {
 	 */
 	void exitNewline(docuWikiParser.NewlineContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link docuWikiParser#bodyElements}.
+	 * Enter a parse tree produced by {@link docuWikiParser#elements}.
 	 * @param ctx the parse tree
 	 */
-	void enterBodyElements(docuWikiParser.BodyElementsContext ctx);
+	void enterElements(docuWikiParser.ElementsContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link docuWikiParser#bodyElements}.
+	 * Exit a parse tree produced by {@link docuWikiParser#elements}.
 	 * @param ctx the parse tree
 	 */
-	void exitBodyElements(docuWikiParser.BodyElementsContext ctx);
+	void exitElements(docuWikiParser.ElementsContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link docuWikiParser#body}.
 	 * @param ctx the parse tree

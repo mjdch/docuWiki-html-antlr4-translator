@@ -27,6 +27,18 @@ public class docuWikiBaseListener implements docuWikiListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterUrl(docuWikiParser.UrlContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUrl(docuWikiParser.UrlContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterHeadline(docuWikiParser.HeadlineContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -123,13 +135,13 @@ public class docuWikiBaseListener implements docuWikiListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterImage(docuWikiParser.ImageContext ctx) { }
+	@Override public void enterMedia(docuWikiParser.MediaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitImage(docuWikiParser.ImageContext ctx) { }
+	@Override public void exitMedia(docuWikiParser.MediaContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -171,13 +183,13 @@ public class docuWikiBaseListener implements docuWikiListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBodyElements(docuWikiParser.BodyElementsContext ctx) { }
+	@Override public void enterElements(docuWikiParser.ElementsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBodyElements(docuWikiParser.BodyElementsContext ctx) { }
+	@Override public void exitElements(docuWikiParser.ElementsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
