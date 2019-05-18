@@ -19,7 +19,6 @@ public class Main {
 
     private static void printFeatures() {
         Map<String, String> features = new LinkedHashMap<>();
-        features.put("PARAGRAPH", "standard paragraph");
         features.put("HEADLINE1", "=Headline 1=");
         features.put("HEADLINE2", "==Headline 2==");
         features.put("HEADLINE3", "===Headline 3===");
